@@ -40,7 +40,7 @@ def check_status(result):
         print("\nThank you for using SMSpoof")
 
 def main(phone_numbers, text_message=None, custom_key=None, delay=None, file=None, schedule=None):
-    if phone_numbers == []:  # If no phone numbers provided, ask for one
+    if phone_numbers == []:  
         phone_number = input("Phone Number: ")
         phone_numbers.append('+' + phone_number)
 
@@ -53,7 +53,6 @@ def main(phone_numbers, text_message=None, custom_key=None, delay=None, file=Non
     if custom_key is None:
         _, custom_key = get_input_data(custom_key)
 
-    # Schedule the message if a future date and time is provided
     if schedule is not None:
         schedule_dt = datetime.datetime.strptime(schedule, "%Y-%m-%d %H:%M")
         current_dt = datetime.datetime.now()
