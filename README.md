@@ -16,7 +16,7 @@
 # ⚙️ Installation
 Clone the repository and navigate to the project folder:
 ``` bash
-git clone https://github.com/LowLevelEngineer/SMSpoof.git
+git clone https://github.com/AlgorithmSlave/SMSpoof.git
 cd SMSpoof
 ```
 Install the required Python libraries:
